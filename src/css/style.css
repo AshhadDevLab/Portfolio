@@ -1,0 +1,1198 @@
+/* for space grotesk medium
+
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 500;
+    font-style :normal;
+
+*/
+
+/* for space grotesk semi-bold
+
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 600;
+    font-style: normal;
+
+*/
+
+/* for space grotesk bold
+
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 700;
+    font-style: normal;
+
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&display=swap");
+
+* {
+  cursor: none;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+}
+
+body {
+  background-color: rgba(0, 0, 0, 1);
+  transition: scroll-behaviour 1s ease-in-out;
+  overflow-x: hidden;
+}
+
+.custom-cursor {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  pointer-events: none;
+  z-index: 9999;
+  top: -10px;
+  left: 10px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  transition: scroll-behaviour 1s ease-in-out;
+  height: 100%;
+}
+
+.startup-container {
+  display: grid;
+  grid-template-columns: 139.305px 147.733px 20px 129.2667px 139.305px;
+  grid-template-rows: 195px 129px 129px 129px 129px 161px 34px 30px;
+  transition: scroll-behaviour 0.5s ease-in-out;
+}
+
+.top-bar {
+  position: absolute;
+  width: 1904px;
+  height: 80px;
+}
+
+.top-bar-name {
+  color: rgba(255, 255, 255, 1);
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 700;
+  font-style: normal;
+  margin-top: 25px;
+  margin-left: 6%;
+}
+
+.star {
+  position: absolute;
+  margin-top: 20px;
+  margin-left: 2.1%;
+  transition: 2s ease-in-out;
+}
+
+.star:hover {
+  transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+}
+
+.about-container {
+  grid-area: 2;
+}
+
+.experience-container {
+  grid-area: 3;
+}
+
+.work-container {
+  grid-area: 4;
+}
+
+.contact-container {
+  grid-area: 5;
+}
+
+.about {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 700;
+  font-style: normal;
+  color: rgba(255, 255, 255, 1);
+  font-size: 100px;
+  background-color: transparent;
+  border: none;
+  width: 575.6px;
+  transition: all 0.4s ease-in-out;
+}
+
+.experience {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 700;
+  font-style: normal;
+  color: rgba(255, 255, 255, 1);
+  font-size: 100px;
+  background-color: transparent;
+  border: none;
+  grid-area: 3;
+  width: 575.6px;
+  transition: all 0.4s ease-in-out;
+}
+
+.work {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 700;
+  font-style: normal;
+  color: rgba(255, 255, 255, 1);
+  font-size: 100px;
+  background-color: transparent;
+  border: none;
+  grid-area: 4;
+  width: 575.6px;
+  transition: all 0.4s ease-in-out;
+}
+
+.contact {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 700;
+  font-style: normal;
+  color: rgba(255, 255, 255, 1);
+  font-size: 100px;
+  background-color: transparent;
+  border: none;
+  grid-area: 5;
+  width: 575.6px;
+  transition: all 0.4s ease-in-out;
+}
+
+.about-hover {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 700;
+  font-style: normal;
+  font-size: 16px;
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  justify-self: center;
+  align-self: center;
+  top: 255px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: all 0.4s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  z-index: -1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.experience-hover {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 700;
+  font-style: normal;
+  font-size: 16px;
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  justify-self: center;
+  align-self: center;
+  top: 384px;
+  left: 0px;
+  transition: all 0.4s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  z-index: -1;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.work-hover {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 700;
+  font-style: normal;
+  font-size: 16px;
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  justify-self: center;
+  align-self: center;
+  top: 515px;
+  left: 0px;
+  transition: all 0.4s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  z-index: -1;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.contact-hover {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 700;
+  font-style: normal;
+  font-size: 16px;
+  border: none;
+  position: absolute;
+  justify-self: center;
+  top: 644px;
+  left: 0px;
+  transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  z-index: -1;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.about-container:hover .about {
+  transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  filter: blur(9px);
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.experience-container:hover .experience {
+  transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  filter: blur(9px);
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.work-container:hover .work {
+  transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  filter: blur(9px);
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.contact-container:hover .contact {
+  transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  filter: blur(9px);
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.about-container:hover .about-hover {
+  transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  color: rgba(255, 255, 255, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0%,
+    #fff 60%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  z-index: 1;
+}
+
+.experience-container:hover .experience-hover {
+  transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  color: rgba(255, 255, 255, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0%,
+    #fff 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  background-clip: text;
+  z-index: 1;
+  -webkit-background-clip: text;
+}
+
+.work-container:hover .work-hover {
+  transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  color: rgba(255, 255, 255, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0%,
+    #fff 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  background-clip: text;
+  z-index: 1;
+  -webkit-background-clip: text;
+}
+
+.contact-container:hover .contact-hover {
+  transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  color: rgba(255, 255, 255, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0%,
+    #fff 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  background-clip: text;
+  z-index: 1;
+  -webkit-background-clip: text;
+}
+
+.linkedin-container {
+  grid-area: 7 / 2;
+  align-items: flex-end;
+  display: flex;
+  transition: 0.5s ease;
+}
+
+.github-container {
+  grid-area: 7 / 4;
+  align-items: flex-end;
+  display: flex;
+  transition: 0.5s ease;
+}
+
+.linkedin {
+  height: 44px;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 600;
+  font-style: normal;
+  color: rgba(255, 255, 255, 1);
+  background-color: transparent;
+  border: none;
+  font-size: 25px;
+}
+
+.linkedin-container:hover {
+  margin-bottom: 10px;
+}
+
+.github {
+  height: 44px;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 600;
+  font-style: normal;
+  color: rgba(255, 255, 255, 1);
+  background-color: transparent;
+  border: none;
+  font-size: 25px;
+}
+
+.github-container:hover {
+  margin-bottom: 10px;
+}
+
+.arrow1 {
+  position: relative;
+  top: -4px;
+  width: 34px;
+  height: 34px;
+}
+
+.arrow2 {
+  position: relative;
+  top: -4px;
+  width: 34px;
+  height: 34px;
+}
+
+.button-highlite-group1 {
+  position: absolute;
+  width: 75px;
+  height: 75px;
+  top: -105px;
+  left: 685px;
+}
+
+.button-highlite-group2 {
+  position: absolute;
+  width: 75px;
+  height: 75px;
+  top: -105px;
+  left: 1075px;
+  z-index: 1;
+}
+
+.about-details-flex-cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-details-container {
+  top: 14px;
+  position: relative;
+  height: 1085px;
+  display: grid;
+  background-color: rgba(0, 0, 0, 1);
+  justify-items: center;
+  align-items: center;
+  grid-template-rows: 213px 100px 30px 150.5px 30px 82px 30px 177.5px 149px;
+  grid-template-columns: 60px 190px 940.75px 648.25px;
+}
+
+.changing-text {
+  justify-self: center;
+  align-self: center;
+  width: 190px;
+  position: relative;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 700;
+  font-style: normal;
+  font-size: 70px;
+  color: rgba(255, 255, 255, 1);
+  text-transform: uppercase;
+  grid-area: 2 / 2;
+}
+
+.main {
+  position: relative;
+  height: 600px;
+  width: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  align-self: center;
+}
+
+.roller {
+  position: relative;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 700;
+  font-style: normal;
+  font-size: 70px;
+  height: 90px;
+  width: 2000px;
+  line-height: 95px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgba(255, 255, 255, 1);
+  text-transform: uppercase;
+  grid-area: 2 / 3;
+  margin-top: -3px;
+  left: -50px;
+}
+
+#spare-time {
+  font-size: 1rem;
+  font-style: italic;
+  letter-spacing: 250px;
+  margin-top: 0;
+  color: #a8dadc;
+}
+
+.roller #rolltext {
+  position: absolute;
+  top: 0;
+  animation: slide 7s infinite;
+}
+
+@keyframes slide {
+  100%,
+  0% {
+    top: 0;
+  }
+  20% {
+    top: -95px;
+  }
+  40% {
+    top: -190px;
+  }
+  60% {
+    top: -285px;
+  }
+  80% {
+    top: -380px;
+  }
+}
+
+.description {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 600;
+  font-style: normal;
+  font-size: 40px;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.9) 0%,
+    rgba(255, 255, 255, 0.2) 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  grid-area: 4 / 2 / 4 / 4;
+}
+
+.art {
+  width: 626px;
+  height: 326px;
+  transform: scaleX(-1);
+}
+
+.basedin {
+  justify-self: left;
+  align-self: center;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 700;
+  font-style: normal;
+  font-size: 60px;
+  color: rgba(255, 255, 255, 1);
+  text-transform: uppercase;
+  grid-area: 6 / 2 / 6 / 4;
+}
+
+.basedindescription {
+  justify-self: left;
+  align-self: flex-start;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 700;
+  font-style: normal;
+  font-size: 40px;
+  color: rgba(255, 255, 255, 1);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.9) 0%,
+    rgba(255, 255, 255, 0.2) 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  grid-area: 8 / 2 / 8 /4;
+}
+
+.pakistani-flag {
+  position: relative;
+  width: 55.18px;
+  height: 40px;
+  top: 9px;
+  border: rgba(0, 0, 0, 1);
+}
+
+.obj-container {
+  position: relative;
+  display: flex;
+  grid-area: 2 / 4 / 9 / 5;
+}
+
+#scene {
+  width: 750px;
+  height: 750px;
+  position: absolute;
+  top: 75px;
+  left: 1050px;
+  pointer-events: none;
+}
+
+.asset1 {
+  position: absolute;
+  left: -10px;
+  top: -950px;
+  width: 2100px;
+  height: 1000px;
+  z-index: -1;
+}
+
+.experience-details-flex-cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.experience-details-container {
+  position: relative;
+  height: 962px;
+  top: 0;
+  left: 0;
+  display: grid;
+  background-color: rgba(0, 0, 0, 1);
+  display: grid;
+  grid-template-rows: 156px 185px 100px 30px 210px 125px 156px;
+  grid-template-columns: 779px 800px 200px 60px;
+}
+
+.checkup {
+  position: absolute;
+  z-index: 3;
+  width: 50px;
+  height: 962px;
+  background-color: white;
+  top: 960px;
+  left: 0;
+}
+
+.experience-heading {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 700;
+  font-style: normal;
+  font-size: 70px;
+  color: rgba(255, 255, 255, 1);
+  text-transform: uppercase;
+  grid-area: 3 / 2;
+  align-self: center;
+}
+
+.description2 {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 600;
+  font-style: normal;
+  font-size: 40px;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.9) 0%,
+    rgba(255, 255, 255, 0.2) 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  grid-area: 5 / 2;
+}
+
+.liquid_ball {
+  justify-self: center;
+  grid-area: 2 / 1 / 7 / 1;
+  pointer-events: none;
+}
+
+.quote {
+  background-color: rgba(0, 0, 0, 1);
+  border: 5px rgba(74, 35, 112, 1) solid;
+  border-radius: 50px;
+  width: 100px;
+  height: 40px;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 600;
+  font-size: 20px;
+  font-style: normal;
+  color: rgba(255, 255, 255, 1);
+  text-align: center;
+  align-self: center;
+  transition: all 0.5s ease;
+  grid-area: 3 / 3 / 3 / 7;
+}
+
+.quote-text {
+  position: relative;
+  top: 20%;
+  transform: translateY(-20%);
+}
+
+.quote:hover {
+  background-color: rgba(255, 255, 255, 1);
+  border: 5px rgba(0, 0, 0, 1) solid;
+  color: rgba(0, 0, 0, 1);
+}
+
+.hidden-quote-box {
+  position: relative;
+  border-radius: 25px;
+  padding: 20px;
+  width: 500px;
+  left: 1150px;
+  top: 150px;
+  background-color: rgba(255, 255, 255, 1);
+  font-size: 24px;
+  opacity: 1;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 600;
+  font-size: 23.5px;
+  font-style: normal;
+  color: rgba(0, 0, 0, 1);
+  text-align: center;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.quote:hover + .hidden-quote-box {
+  opacity: 1;
+}
+
+.experience1-flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.experience1 {
+  display: grid;
+  grid-template-rows: 161px 100px 30px 480px 161px;
+  grid-template-columns: 60px 400px 53px 400px 53px 400px 53px 400px 60px;
+}
+
+.designtools {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 700;
+  font-style: normal;
+  font-size: 70px;
+  color: rgba(255, 255, 255, 1);
+  text-transform: uppercase;
+  align-self: center;
+  grid-area: 2 / 2;
+}
+
+.experience2-flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.experience2 {
+  display: grid;
+  grid-template-rows: 161px 100px 30px 480px 161px;
+  grid-template-columns: 60px 400px 53px 400px 53px 400px 53px 400px 60px;
+}
+
+.programminglanguages {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 700;
+  font-style: normal;
+  font-size: 70px;
+  color: rgba(255, 255, 255, 1);
+  text-transform: uppercase;
+  align-self: center;
+  grid-area: 2 / 2 / 2 / 7;
+}
+
+.experience3-flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.experience3 {
+  display: grid;
+  grid-template-rows: 161px 100px 30px 480px 161px;
+  grid-template-columns: 60px 400px 53px 400px 53px 400px 53px 400px 60px;
+}
+
+.jslibraries {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 700;
+  font-style: normal;
+  font-size: 70px;
+  color: rgba(255, 255, 255, 1);
+  text-transform: uppercase;
+  align-self: center;
+  grid-area: 2 / 2 / 2 / 7;
+}
+
+.experience4-flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.experience4 {
+  display: grid;
+  grid-template-rows: 161px 100px 30px 480px 161px;
+  grid-template-columns: 60px 400px 53px 400px 53px 400px 53px 400px 60px;
+}
+
+.aitools {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 700;
+  font-style: normal;
+  font-size: 70px;
+  color: rgba(255, 255, 255, 1);
+  text-transform: uppercase;
+  align-self: center;
+  grid-area: 2 / 2 / 2 / 7;
+}
+
+.experience5-flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.experience5 {
+  display: grid;
+  grid-template-rows: 161px 100px 30px 480px 161px;
+  grid-template-columns: 60px 400px 53px 400px 53px 400px 53px 400px 60px;
+}
+
+.apis {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 700;
+  font-style: normal;
+  font-size: 70px;
+  color: rgba(255, 255, 255, 1);
+  text-transform: uppercase;
+  align-self: center;
+  grid-area: 2 / 2 / 2 / 7;
+}
+
+.work-flex-cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.work-cont {
+  display: grid;
+  grid-template-rows: 161px 100px 30px 480px 161px;
+  grid-template-columns: 60px 559.66px 40px 559.66px 40px 559.66px 60px;
+}
+
+.work-text {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 700;
+  font-style: normal;
+  font-size: 70px;
+  color: rgba(255, 255, 255, 1);
+  text-transform: uppercase;
+  align-self: center;
+  grid-area: 2 / 2 / 2 / 2;
+}
+
+.enigmaguard,
+.py3sort,
+.painter {
+  width: 559px;
+  height: 480px;
+  background-color: #000000;
+  border-radius: 25px;
+  box-shadow: 0px 0px 30px 2px rgba(255, 255, 255, 0.7);
+}
+
+.enigmaguard {
+  grid-area: 4 / 2 / 4 / 2;
+}
+
+.enigmaguard_picture {
+  position: relative;
+  width: 489px;
+  height: 275.06px;
+  top: 35px;
+  left: 35px;
+  border-radius: 25px;
+  border: 2px solid #1fffa9;
+}
+
+#enigmaguard_heading {
+  position: relative;
+  top: 50px;
+  left: 35px;
+  color: #1fffa9;
+  text-align: center;
+  font-family: "Space Grotesk";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+#enigmaguard_des {
+  position: relative;
+  top: 60px;
+  left: 35px;
+  color: #ffffff;
+  text-align: left;
+  font-family: "Space Grotesk";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.py3sort {
+  grid-area: 4 / 4 / 4 / 4;
+}
+
+.py3sort_picture {
+  position: relative;
+  width: 489px;
+  height: 275.06px;
+  top: 35px;
+  left: 35px;
+  border-radius: 25px;
+  border: 2px solid #fe6b00;
+}
+
+.painter {
+  grid-area: 4 / 6 / 4 / 6;
+}
+
+.painter_picture {
+  position: relative;
+  width: 489px;
+  height: 275.06px;
+  top: 35px;
+  left: 35px;
+  border-radius: 25px;
+  border: 2px solid #d21421;
+}
+
+#painter_heading {
+  position: relative;
+  top: 50px;
+  left: 35px;
+  color: #d21421;
+  font-family: "Space Grotesk";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+#painter_des {
+  position: relative;
+  top: 60px;
+  left: 35px;
+  color: #ffffff;
+  text-align: left;
+  font-family: "Space Grotesk";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+#py3sort_heading {
+  position: relative;
+  top: 50px;
+  left: 35px;
+  color: #fe6b00;
+  font-family: "Space Grotesk";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+#py3sort_des {
+  position: relative;
+  top: 60px;
+  left: 35px;
+  color: #ffffff;
+  text-align: left;
+  font-family: "Space Grotesk";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.contact-flex-cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-cont {
+  display: grid;
+  grid-template-rows: 161px 100px 30px 480px 170px 130px;
+  grid-template-columns: 60px 559.66px 40px 559.66px 40px 559.66px 60px;
+}
+
+.contact-text {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 700;
+  font-style: normal;
+  font-size: 70px;
+  color: rgba(255, 255, 255, 1);
+  text-transform: uppercase;
+  align-self: center;
+  grid-area: 2 / 2 / 2 / 2;
+}
+
+.contact-box {
+  grid-area: 4 / 2 / 6 / 3;
+  width: 560px;
+  height: 660px;
+  border-radius: 25px;
+  background: #000;
+  box-shadow: 0px 0px 30px 2px rgba(255, 255, 255, 0.7);
+}
+
+.name-cont,
+.email-cont,
+.message-cont {
+  color: #fff;
+  font-family: "Space Grotesk";
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.name-cont {
+  position: relative;
+  left: 45px;
+  top: 30px;
+}
+
+.name-entry {
+  position: relative;
+  top: 55px;
+  left: 45px;
+  width: 470px;
+  height: 50px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  border: 5px solid #4a2370;
+  background: #000;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.email-cont {
+  position: relative;
+  left: 45px;
+  top: 80px;
+}
+
+.email-entry {
+  position: relative;
+  top: 100px;
+  left: 45px;
+  width: 470px;
+  height: 50px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  border: 5px solid #4a2370;
+  background: #000;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.message-cont {
+  position: relative;
+  left: 45px;
+  top: 130px;
+}
+
+.message-entry {
+  position: relative;
+  left: 45px;
+  top: 145px;
+  width: 470px;
+  height: 110px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  border: 5px solid #4a2370;
+  background: #000;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+#fname-input {
+  position: relative;
+  left: 5px;
+  width: 450px;
+  outline: none;
+  border: none;
+  height: 40px;
+  background-color: #000000;
+  border-color: #000;
+  color: white;
+  font-family: "Space Grotesk";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+#email-input {
+  position: relative;
+  left: 5px;
+  width: 450px;
+  outline: none;
+  border: none;
+  height: 40px;
+  background-color: #000000;
+  border-color: #000;
+  color: white;
+  font-family: "Space Grotesk";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+#message-input {
+  position: relative;
+  left: 5px;
+  width: 450px;
+  outline: none;
+  border: none;
+  height: 100px;
+  background-color: #000000;
+  border-color: #000;
+  color: white;
+  font-family: "Space Grotesk";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  vertical-align: top;
+  overflow-y: auto;
+  word-wrap: break-word;
+  resize: none;
+}
+
+#submit-button {
+  position: relative;
+  top: 180px;
+  left: 180px;
+  width: 200px;
+  height: 65px;
+  border: 5px rgba(74, 35, 112, 1) solid;
+  border-radius: 50px;
+  color: white;
+  background-color: #000000;
+  font-family: "Space Grotesk";
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.humanoid {
+  position: relative;
+  width: 1000px;
+  height: 1000px;
+  pointer-events: none;
+  top: 75px;
+  left: 900px;
+}

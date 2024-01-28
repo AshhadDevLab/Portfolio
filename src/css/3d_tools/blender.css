@@ -1,0 +1,95 @@
+
+.card-blender-container {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    font-family: 'Space Grotesk', sans-serif;
+    grid-area: 4 / 2;
+}
+
+.card-track-blender {
+    width: 480px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+  
+.card-wrapper-blender {
+    width: 100%;
+    position: relative;
+}
+  
+.card-blender {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    aspect-ratio: 1;
+    position: relative;
+    margin: 16px;
+    border-radius: 32px;
+    overflow: hidden;
+    cursor: pointer;
+}
+  
+.card-image-blender {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 4;
+    width: 100px;
+    height: 100px;
+}
+  
+.blender_svg {
+    position: absolute;
+    left: -25px;
+    width: 150px;
+    height: 150px;
+}
+  
+.card-gradient-blender {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background: radial-gradient(50% 50% at 50% 50%,
+    #000 50%,
+    #320080 80%
+    );
+    mix-blend-mode: darken; 
+    pointer-events: none;
+    z-index: 3;
+}
+  
+.card-letters-blender {
+    --x: 0px;
+    --y: 0px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+    color: white;
+    font-size: 12.88px;
+    font-weight: 500;
+    word-wrap: break-word;
+    opacity: 0;
+    transition: opacity 400ms;
+    mask-image: radial-gradient(
+      calc( 480px * 0.8) circle at var(--x) var(--y), 
+      rgb(255 255 255) 20%, 
+      rgb(255 255 255 / 25%), 
+      transparent
+    );
+    -webkit-mask-image: radial-gradient(
+      calc( 480px * 0.8) circle at var(--x) var(--y), 
+      rgb(255 255 255) 20%, 
+      rgb(255 255 255 / 25%), 
+      transparent
+    );
+    scale: 1.03;
+}
+
+.card-blender:hover .card-letters-blender {
+    opacity: 1;
+}
